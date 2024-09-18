@@ -1,0 +1,93 @@
+.Behavior-EventReflection {
+    align-content: center;
+    -unity-text-align: middle-center;
+    flex-direction: row;
+}
+
+EventReflectionElement #Icon {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+}
+
+EventReflectionElement #Icon {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+}
+
+EventReflectionElement Label {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+EventReflectionElement #Icon.RootNode {
+    background-image: url("/Packages/com.unity.behavior/Authoring/UI/AssetEditor/Assets/Images/Icons/send-message.png");
+    width: 0;
+}
+
+EventReflectionElement #Icon.Send {
+    background-image: url("/Packages/com.unity.behavior/Authoring/UI/AssetEditor/Assets/Images/Icons/send-message.png");
+}
+
+EventReflectionElement #Icon.Wait {
+    background-image: url("/Packages/com.unity.behavior/Authoring/UI/AssetEditor/Assets/Images/Icons/wait-for-message.png");
+}
+
+EventReflectionElement #StackedLines {
+    align-self: center;
+}
+
+EventReflectionElement #ChannelLine {
+    flex-direction: row;
+    align-self: center;
+}
+
+EventReflectionElement #ChannelLine > Label.RootNode {
+    font-size: 14px;
+}
+
+EventReflectionElement #MessageLine {
+    flex-direction: row;
+}
+
+EventReflectionElement .NoChannelAssigned {
+    display: none;
+    max-height: 0;
+}
+
+EventReflectionElement .ChannelAssigned {
+    display: flex;
+    max-height: none;
+}
+
+EventReflectionElement .ChannelAssigned Label {
+    margin-top: 4px;
+}
+
+EventReflectionElement #LeftQuote {
+    margin-right: 0;
+}
+
+EventReflectionElement #RightQuote {
+    margin-left: 0;
+}
+
+EventReflectionElement #Message {
+    flex-direction: row;
+}
+
+EventReflectionElement #Message > Label {
+    flex-direction: row;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+EventReflectionElement #Message .LinkField #unity-text-input.unity-disabled {
+    visibility: hidden;
+    width: 0px;
+}
+
+EventReflectionElement LinkField {
+    align-self: center;
+}

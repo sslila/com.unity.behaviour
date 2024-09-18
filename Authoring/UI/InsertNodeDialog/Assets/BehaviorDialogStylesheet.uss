@@ -1,0 +1,18 @@
+Dialog {
+	padding: var(--appui-static-spacing-150);
+}
+
+Heading {
+	align-self: center;
+	font-size: var(--appui-font-sizes-100);
+	-unity-font-style: bold;
+	-unity-text-align: middle-center;
+}
+
+Divider {
+	display: none;
+}
+
+#appui-dialog__content {
+	margin-top: 12px;
+}

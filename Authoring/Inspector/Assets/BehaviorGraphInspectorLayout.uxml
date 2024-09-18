@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:appui="Unity.AppUI.UI">
+
+    <ui:VisualElement name="Inspector-Info">
+        <ui:VisualElement name="Info-Header">
+            <ui:Label name="Info-Name"/>
+            <ui:Label name="Subtitle"/>
+        </ui:VisualElement>
+        <ui:Label name="Info-Description"/>
+        <ui:VisualElement name="GraphInfo-Buttons">
+                <appui:ActionButton name="EditSubgraphStoryButton" label="Edit Subgraph Representation"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <appui:Divider size="S"/>
+    <ui:VisualElement name="InspectedProperties">
+        <ui:VisualElement name="GraphFieldContainer" class="Inspector-FieldContainer">
+            <ui:Label name="GraphDescription-Label" text="Description"/>
+            <appui:TextField name="GraphDescription-Field" placeholder="Description of the graph"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    
+</ui:UXML>

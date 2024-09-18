@@ -1,0 +1,15 @@
+.appui-popover__container {
+    background-color: var(--appui-base-100);
+    border-radius: 8px;
+}
+
+.appui-popover__shadow-element {
+    border-radius: 8px;
+}
+
+.BehaviorModal {
+    border-width: 1px;
+    border-radius: var(--appui-border-radius-xl);
+    border-color: var(--appui-base-400);
+    flex-shrink: 0;
+}

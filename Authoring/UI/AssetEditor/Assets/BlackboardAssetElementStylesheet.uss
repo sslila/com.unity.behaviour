@@ -1,0 +1,59 @@
+.BlackboardAssetElement {
+    flex-grow: 1;
+}
+
+#TitleElement {
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    height: 28px;
+}
+
+#TitleElement:hover {
+    background-color: var(--appui-backgrounds-300);
+    border-radius: var(--appui-border-radius-md);
+}
+
+#BlackboardAssetIcon {
+    align-self: center;
+    margin-right: 4px;
+}
+
+#Name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 2px 0;
+    align-self: center;
+}
+
+#TitleElement:hover #EditButton {
+    display: flex;
+}
+
+#CollapseIcon {
+    background-color: initial;
+    border-color: initial;
+}
+
+#EditButton {
+    position: absolute;
+    right: 6px;
+    align-self: center;
+    display: none;
+}
+
+.AssetCollapsed #CollapseIcon {
+    rotate: 180deg;
+}
+
+.AssetCollapsed #Variables {
+    display: none;
+}
+
+.AssetExpanded #Variables {
+    display: flex;
+}

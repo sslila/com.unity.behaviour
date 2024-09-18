@@ -1,0 +1,120 @@
+.Port {
+    cursor: url('/Packages/com.unity.behavior/Tools/Graph/Assets/Icons/HandCursor32.png');
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.OutputPort:hover #Port-Icon {
+    min-height: 16px;
+    min-width: 16px;
+    position: relative;
+    left: -7px;
+    top: 17px;
+    align-self: center;
+    background-image: url("/Packages/com.unity.behavior/Elements/Assets/Icons/port-arrow-down.png");
+    opacity: 0.5;
+}
+
+.InputPort:hover #Port-Icon {
+    min-height: 16px;
+    min-width: 16px;
+    position: relative;
+    left: 7px;
+    top: -17px;
+    align-self: center;
+    background-image: url("/Packages/com.unity.behavior/Elements/Assets/Icons/port-arrow-up.png");
+    opacity: 0.5;
+}
+
+.EdgePort.OutputPort {
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    bottom: -8px;
+    border-bottom-width: 4px;
+}
+
+.EdgePort.InputPort {
+    top: -8px;
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    border-top-width: 4px;
+}
+
+.EdgeConnectPort .Port:hover {
+    border-bottom-color: initial;
+}
+
+.Sequence > .GraphNode > .Port {
+    display: none;
+}
+
+.SequencedNode .Port {
+    display: none;
+}
+
+.SocketPort {
+    align-content: center;
+    justify-content: center;
+    
+    width: 14px;
+    height: 14px;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: black;
+    flex-shrink: 0;
+    opacity: 1.0;
+    padding: 1px;
+}
+
+.SocketPort #Port-Socket-Fill {
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+    align-self: center;
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.SocketPort:hover {
+    border-color: blue;
+}
+
+.SocketPort:hover #Port-Socket-Fill {
+    background-color: blue;
+}
+
+#Port-Edge {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    border-radius: 2px;
+    display: none;
+}
+
+.EdgePort.InputPort > #Port-Edge {
+    top: -4px;
+}
+
+.EdgePort.OutputPort > #Port-Edge {
+    bottom: -4px;
+}
+
+.Port:hover #Port-Edge {
+    background-color: var(--appui-accent-100);
+    opacity: 0.5;
+    display: flex;
+}
+
+.HoveredNodeConnectInput .EdgePort.InputPort > #Port-Edge {
+    background-color: var(--appui-accent-100);
+    display: flex;
+}
+.HoveredNodeConnectOutput .EdgePort.OutputPort > #Port-Edge {
+    background-color: var(--appui-accent-100);
+    display: flex;
+}

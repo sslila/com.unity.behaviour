@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements"
+         xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" xmlns:appui="Unity.AppUI.UI">
+    <appui:ExVisualElement name="FloatingPanelElement">
+        <appui:AppBar name="FloatingPanelAppBar">
+            <appui:IconButton name="CloseButton" quiet="true" icon="x"/>
+        </appui:AppBar>
+        <ui:ScrollView name="PanelContent"/>
+    </appui:ExVisualElement>
+    <ui:VisualElement name="Right" class="FrameBorder"/>
+    <ui:VisualElement name="Lower" class="FrameBorder"/>
+    <ui:VisualElement name="Upper" class="FrameBorder"/>
+    <ui:VisualElement name="Left" class="FrameBorder"/>
+    <ui:VisualElement name="UpperLeft" class="FrameBorder"/>
+    <ui:VisualElement name="LowerRight" class="FrameBorder"/>
+    <ui:VisualElement name="LowerLeft" class="FrameBorder"/>
+    <ui:VisualElement name="UpperRight" class="FrameBorder"/>
+</ui:UXML>

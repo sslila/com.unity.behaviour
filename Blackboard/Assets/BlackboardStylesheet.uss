@@ -1,0 +1,75 @@
+BlackboardView {
+    flex-grow: 1;
+    background-color: var(--appui-backgrounds-200);
+}
+
+#MainScrollView {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+#unity-content-container {
+    flex-grow: 1;
+}
+
+#SearchContainer {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+#BlackboardViewContent {
+    margin-top: 6px;
+    flex-grow: 0;
+}
+
+.BlackboardViewContent {
+    flex-grow: 0;
+}
+
+#Variables {
+    flex-grow: 0;
+    flex-shrink: 1;
+    min-height: 0;
+}
+
+#Variables ListView {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#Variables > ScrollView > VisualElement > .unity-scroll-view__content-viewport {
+    padding-left: var(--appui-static-spacing-50);
+    padding-right: var(--appui-static-spacing-50);
+}
+
+#Variables > ScrollView {
+    flex-grow: 0;
+    width: 100%;
+}
+
+#Variables #unity-slider {
+    display: none;
+}
+
+.unity-list-view {
+    width: auto;
+}
+
+.unity-list-view__empty-label {
+    width: 100%;
+}
+
+.unity-collection-view__item--selected {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__item:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+Divider {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}

@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:appui="Unity.AppUI.UI">
+
+    <ui:VisualElement name="Inspector-Info">
+        <ui:VisualElement name="Info-Header">
+            <ui:VisualElement name="Node-Icon"/>
+            <ui:Label name="Info-Name"/>
+            <ui:Label name="Subtitle"/>
+        </ui:VisualElement>
+        <ui:Label name="Info-Description"/>
+        <ui:VisualElement name="NodeInfo-EditButtons">
+            <appui:ActionGroup name="EditButtonsGroup" justified="true">
+                <appui:ActionButton name="EditDefinition" label ="Edit Definition"/>
+                <appui:ActionButton name="EditScript" label ="Edit Script"/>
+            </appui:ActionGroup>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <appui:Divider size="S"/>
+    <ui:VisualElement name="InspectedProperties"/>
+    
+</ui:UXML>

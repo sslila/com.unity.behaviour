@@ -1,0 +1,8 @@
+<ui:UXML 
+        xmlns:ui="UnityEngine.UIElements" 
+        xmlns:mb="Unity.Behavior">
+    <mb:BehaviorToolbar name="GraphToolbar"/>
+    <ui:VisualElement name="EditorPanel">
+        <mb:BehaviorGraphView name="BehaviorGraphView"/>
+    </ui:VisualElement>
+</ui:UXML>

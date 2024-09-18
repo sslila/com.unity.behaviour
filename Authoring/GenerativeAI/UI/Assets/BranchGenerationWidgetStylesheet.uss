@@ -1,0 +1,110 @@
+#BranchGenerationWidget {
+    flex-grow: 1;
+}
+
+#WidgetContentContainer {
+    padding: 0 12px 12px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.HideHelpText #HelpText {
+    display: none;
+}
+
+#PromptMethodBox {
+    padding-bottom: 12px;
+}
+
+#PromptMethodLabel {
+    color: var(--appui-primary-1100);
+    white-space: normal;
+    flex-wrap: wrap;
+    font-size: var(--appui-font-sizes-75);
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#PromptTextField {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#ButtonRegion {
+    padding-top: var(--appui-static-spacing-150);
+    align-self: flex-end;
+    min-height: 20px;
+    flex-shrink: 0;
+}
+
+Button {
+    min-width: 100px;
+    margin-right: 0;
+}
+
+#DropdownLabel {
+    margin-left: 0;
+}
+
+#DropdownContainer {
+    flex-direction: row;
+}
+
+#DropdownContainer > Dropdown {
+    flex-grow: 1;
+}
+
+#appui-appbar__bottom-border {
+    display: none;
+}
+
+#BranchGenerationWidgetAppBar {
+    padding: 6px;
+    background-color: initial;
+    --box-shadow-color: transparent;
+    display: none;
+}
+
+#BranchGenerationWidgetAppBar .appui-localized-text {
+    -unity-text-align: middle-center;
+}
+
+#appui-appbar__bar {
+    background-color: transparent;
+}
+
+#appui-appbar__bottom-border {
+    display: none;
+}
+
+#appui-appbar__action-container {
+    position: absolute;
+    right: 6px;
+}
+
+.NewBranchModal {
+    width: 280px;
+}
+
+.NewBranchModal #BranchGenerationWidgetAppBar {
+    display: flex;
+}
+
+.NewBranchModal #PromptTextField {
+    flex-grow: 0;
+    height: 30px;
+}
+
+.NewBranchModal #WidgetContentContainer {
+    min-height: 140px;
+}
+
+.NewBranchModal #PromptTextField {
+    flex-grow: 0;
+}
+
+

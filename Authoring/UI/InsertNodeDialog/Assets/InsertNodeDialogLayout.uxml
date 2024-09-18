@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:aid="Unity.Behavior" editor-extension-mode="False" xmlns:appui="Unity.AppUI.UI">
+    <ui:VisualElement name="DialogContainer">
+        <ui:Label name="Description" text="Description"/>
+        <ui:ScrollView name="Content"/>
+    </ui:VisualElement>
+</ui:UXML>

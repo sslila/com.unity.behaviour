@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:appui="Unity.AppUI.UI">    
+    <appui:Canvas control-scheme="Editor">
+    <ui:VisualElement name="Viewport">
+        <ui:VisualElement name="Content" class="GraphContent">
+            <ui:VisualElement name="Edges"/>
+            <ui:VisualElement name="Elements"/>            
+        </ui:VisualElement>
+    </ui:VisualElement>
+    </appui:Canvas>
+</ui:UXML>

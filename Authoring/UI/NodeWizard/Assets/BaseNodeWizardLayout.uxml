@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:aid="Unity.Behavior" editor-extension-mode="False" xmlns:appui="Unity.AppUI.UI">
+        <ui:VisualElement name="FieldRegion">
+            <ui:VisualElement name="NameCategoryView" class="Region">
+                <aid:HelpText name="InfoHelpBox"/>
+                <ui:VisualElement name="NameCategoryContainer">
+                    <ui:VisualElement name="NameRegion">
+                        <ui:Label text="Name" />
+                        <aid:TextFieldWithValidation picking-mode="Ignore" name="NameField" title="Name" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CategoryRegion">
+                        <ui:Label text="Category" />
+                        <ui:VisualElement name="CategoryFieldContainer">
+                            <appui:Dropdown name="CategoryDropdown" />
+                            <appui:TextField picking-mode="Ignore" name="CategoryField" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="StoryView">
+                <aid:HelpText name="StoryHelpBox"/>
+                <aid:StoryEditor name="StoryEditor"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+</ui:UXML>

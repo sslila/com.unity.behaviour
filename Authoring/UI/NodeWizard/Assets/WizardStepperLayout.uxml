@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:aid="Unity.Behavior" editor-extension-mode="False" xmlns:appui="Unity.AppUI.UI">
+    <ui:VisualElement name="PreviewElement"/>    
+    <ui:VisualElement name="WizardStepperContainer">
+            <appui:AppBar name="WizardAppBar"/>
+            <ui:VisualElement name="WizardContentContainer"/>
+            <ui:VisualElement name="WizardButtonContainer">
+                <appui:Button name="NextButton" title="Next"/>
+                <appui:Button name="ConfirmButton" title=""/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+</ui:UXML>

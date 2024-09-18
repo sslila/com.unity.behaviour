@@ -1,0 +1,44 @@
+.Behavior-SubgraphNodeUI {
+    -unity-text-align: middle-left;
+}
+
+.Behavior-SubgraphNodeUI#Content {
+    align-items: flex-start;
+}
+
+#GraphSelectionLine {
+    flex-direction: row;
+}
+
+#GraphSelectionLine > Label {
+    flex-direction: row;
+    margin-left: 0;
+}
+
+#StoryLine {
+    flex-direction: row;
+    visibility: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#StoryLine.ShowStory {
+    visibility: visible;
+}
+
+#NodeTitle, #NodeValueContainer {
+    display: none;
+}
+
+#GraphSelectionLine.ShowStory   {
+    display: none;
+}
+
+/*
+#NodeIcon {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    align-self: center;
+    background-image: url("/Packages/com.unity.behavior/Elements/Editor/Assets/Icons/subgraph-icon.png");
+}*/

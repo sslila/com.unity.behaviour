@@ -1,0 +1,130 @@
+#SelectionBorder {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: center;
+    border-radius: var(--appui-border-radius-lg);
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.GraphNode {
+    align-self: center;
+}
+
+.Group > .GraphNode {
+    align-self: auto;
+}
+
+.GraphNode:hover > #SelectionBorder {
+    border-color: var(--appui-accent-100);
+}
+
+.Sequence_ChildHovered:hover > #SelectionBorder {
+    border-color: transparent;
+    border-width: 1px;
+}
+
+.Selected > #SelectionBorder {
+    border-color: var(--appui-accent-100);
+    border-width: 2px;
+}
+
+.Selected:hover > #SelectionBorder {
+    border-color: var(--appui-accent-100);
+    border-width: 2px;
+}
+
+#NodeColor {
+    width: 8px;
+    height: auto;
+    display: none;
+    border-radius: var(--appui-border-radius-lg) 0 0 var(--appui-border-radius-lg);
+}
+
+#NodeIcon {
+    display: none;
+    margin-right: 8px;
+}
+
+.ShowNodeColor #NodeColor {
+    display: flex;
+}
+
+.ShowNodeColor #NodeContentContainer {
+    display: flex;
+    border-radius: 0 var(--appui-border-radius-lg)  var(--appui-border-radius-lg)  0;
+    border-left-width: 0;
+}
+
+#Icon {
+    display: none;
+}
+
+#NodeContentContainer {
+    flex-direction: row;
+    background-color: var(--appui-backgrounds-300);
+    border-radius: var(--appui-border-radius-lg);
+    min-height: 36px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#Content {
+    flex-grow: 1;
+}
+
+.PortsContainer {
+    flex-direction: row;
+    justify-content: center;
+}
+
+Label {
+    font-size: var(--appui-font-sizes-100);
+    padding: 4px 0;
+}
+
+#EnumVariable {
+    flex-shrink: 0;
+}
+
+#OutputPortsContainer Label{
+    padding: 0;
+    margin-top: 0;
+    align-self: center;
+}
+
+.PortContainer {
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.MoveManipulatorActive {
+    opacity: 0.6;
+}
+
+.MoveManipulatorActive > #SelectionBorder {
+    border-color: transparent;
+}
+
+.HighlightInputs .GraphNode {
+    opacity: 0.4;
+}
+
+.HighlightInputs .PotentialNodeConnect {
+    opacity: 1.0;
+}
+
+.HighlightInputs .PotentialNodeConnect .GraphNode {
+    opacity: 1.0;
+}
+
+.HighlightInputs .EdgeConnectPort {
+    opacity: 1.0;
+}
+
+

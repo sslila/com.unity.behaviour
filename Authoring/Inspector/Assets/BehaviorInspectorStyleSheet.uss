@@ -1,0 +1,262 @@
+#InspectedProperties {
+	flex-shrink: 1;
+}
+
+Label {
+	margin-top: 2px;
+	color: var(--appui-primary-1200);
+}
+
+.Inspector-FieldContainer {
+	justify-content: flex-start;
+	flex-direction: row;
+	align-items: center;
+	flex-grow: 1;
+	margin-top: 8px;
+	height: 20px;
+}
+
+.LinkField {
+	flex-grow: 2;
+	width: 60%;
+}
+
+.LinkedLabelContainer > Label {
+	margin: 0;
+}
+
+.Inspector-FieldContainer > Label {
+	flex-grow: 10;
+	flex-basis: 0;
+	min-width: 96px;
+	width: 40%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0;
+	margin-right: 4px;
+	padding: 0;
+	-unity-text-align: middle-left;
+}
+
+.FieldContainer {
+	flex-grow: 1;
+}
+
+.NodeInspectorToggle #unity-checkmark {
+	-unity-background-image-tint-color: white;
+}
+
+.NodeInspectorToggle Toggle:focus #unity-checkmark {
+	background-image: resource(--unity-icons-foldout);
+}
+
+.NodeInspectorToggle Toggle:focus:checked #unity-checkmark {
+	background-image: resource(--unity-icons-foldout-checked);
+}
+
+#Info-Header {
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 8px;
+}
+
+#Subtitle {
+	color: var(--appui-foregrounds-25);
+	font-size: var(--appui-font-sizes-75);
+	flex-grow: 0;
+	flex-shrink: 1;
+	max-width: 100%;
+	margin: 0;
+	align-self: center;
+	-unity-text-align: middle-right;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0;
+}
+
+#Info-Name {
+	color: var(--appui-primary-1200);
+	font-size: var(--appui-font-sizes-100);
+	-unity-font-style: bold;
+	flex-grow: 1;
+	padding: 0;
+	margin: 0;
+	margin-right: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#Info-Name.Full-Width {
+	width: 100%;
+}
+
+#Node-Icon {
+	width: 24px;
+	height: 24px;
+}
+
+#Info-Description {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 4px;
+	white-space: normal;
+	color: var(--appui-foregrounds-50);
+	font-size: var(--appui-font-sizes-100);
+}
+
+.Hidden {
+	display: none;
+}
+
+Divider {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.FieldDivider {
+	padding-top: 8px;
+}
+
+#EditSubgraphStoryButton {
+	margin-top: 4px;
+	margin-bottom: 8px;
+}
+
+#GraphDescription-Field {
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+#NodeInfo-EditButtons {
+	flex-direction: row;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	align-items: center;
+}
+
+ActionButton {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#EditDefinition {
+	margin-right: 2px;
+}
+
+#EditScript {
+	margin-left: 2px;
+}
+
+#InputField {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#DescriptionField {
+	max-height: 80px;
+	overflow: scroll;
+}
+
+#DescriptionField > VisualElement > VisualElement {
+	margin: 0;
+	padding: 0;
+}
+
+#DescriptionField Label {
+	margin: 0;
+	white-space: normal;
+}
+
+.appui-vector2field__container {
+	flex-grow: 1;
+}
+
+.appui-vector2field {
+    flex-direction: row;
+	padding-right: 12px;
+}
+
+.appui-vector3field__container {
+	flex-grow: 1;
+}
+
+.appui-vector3field {
+    flex-direction: row;
+    padding-right: 12px;
+}
+
+.appui-vector4field__container {
+	flex-grow: 1;
+}
+
+.appui-vector4field {
+	flex-direction: row;
+	padding-right: 12px;
+}
+
+#appui-vector4field__row {
+	margin-right: 4px;
+	margin-bottom: 0;
+	justify-content: space-between;
+}
+
+.FieldContainer > Toggle {
+	width: 100%;
+}
+
+.DropdownPropertyElement {
+	flex-direction: row;
+	align-content: stretch;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+	padding-top: 8px;
+}
+
+.DropdownPropertyElement > Label {
+	align-self: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.DropdownPropertyElement > Dropdown {
+	width: 60%;
+}
+
+#PlaceholderWarningContainer {
+	flex-direction: row;
+	margin: 4px 0px;
+}
+
+#PlaceholderWarningContainer Text {
+	color: var(--appui-warning-100);
+	flex-shrink: 1;
+}
+
+#PlaceholderWarningIcon {
+	margin-right: 4px;
+	--unity-image-tint-color: var(--appui-warning-100);
+}
+
+.StaticToggle {
+	width: 60%;
+}
+
+.ToggleOptionField {
+	margin-top: 8px;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.ToggleOptionField Label {
+	margin-left: 0;
+}
+
+.ToggleOptionField Toggle {
+	width: auto;
+}

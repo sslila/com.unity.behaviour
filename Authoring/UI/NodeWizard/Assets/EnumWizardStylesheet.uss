@@ -1,0 +1,41 @@
+:root {
+}
+
+#NameRegion {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+  align-items: center;
+}
+
+#NameRegion > Label {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+}
+
+#NameRegion TextFieldWithValidation {
+  width: 60%;
+}
+
+#ScrollContainer #unity-content-container {
+  flex-grow: 1;
+}
+
+#MembersListView {
+  width: 100%;
+}
+
+#MembersRegion {
+  min-height: 160px;
+}
+
+TextFieldWithValidation {
+  flex-shrink: 1;
+  align-self: flex-end;
+  width: 80%;
+}
+
+.unity-collection-view__item {
+  justify-content: space-between;
+}

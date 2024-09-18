@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:appui="Unity.AppUI.UI">
+    <ui:VisualElement name="EditableListRegion" class="Region">
+        <appui:Button name="AddItemButton" title="Add"/>
+        <ui:ScrollView name="ListItemContainer" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,91 @@
+#ConditionLabel {
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#ConditionContainerElement {
+    flex-shrink: 0;
+    flex-grow: 1;
+    align-content: center;
+    height: auto;
+    background-color: var(--appui-backgrounds-300);
+    border-radius: var(--appui-border-radius-md);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 4px;
+    min-height: 20px;
+}
+
+#ConditionContainerElement:hover {
+    background-color: var(--appui-color-gray-500);
+}
+
+.ConditionElement {
+    flex-direction: row;
+    align-items: flex-end;
+    width: auto;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+ComparisonConditionElement {
+    flex-direction: row;
+    height: 20px;
+    align-content: center;
+}
+
+ComparisonConditionElement > Label {
+    margin-top: 2px;
+    padding: 0;
+    -unity-text-align: middle-left;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+.ConditionElement BaseLinkField {
+    width: auto;
+}
+
+.ConditionElement .LinkField {
+    width: auto;
+}
+
+.ConditionElement > Label {
+    align-self: center;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 0;
+    -unity-text-align: middle-left;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+#unity-content-viewport {
+    padding: 0;
+}
+
+Divider {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+ListView {
+    padding-top: 6px;
+}
+
+.unity-collection-view__item--selected {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.unity-list-view__item:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.Wrapped {
+    margin-top: 4px;
+}

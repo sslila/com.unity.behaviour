@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:aid="Unity.Behavior">
+        <ui:VisualElement name="InfoRegion">
+            <aid:HelpText name="InfoHelpBox" class="HelpText"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="NameRegion" class="Region">
+            <ui:Label text="Name"/>
+            <aid:TextFieldWithValidation name="EnumNameField"/>
+        </ui:VisualElement>
+</ui:UXML>

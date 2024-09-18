@@ -1,0 +1,24 @@
+{
+    "name": "Unity.Muse.Behavior",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e0205eb74dc764cf6ab9891355857e49"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.muse.common",
+            "expression": "2.0.5",
+            "define": "ENABLE_MUSE_BEHAVIOR"
+        }
+    ],
+    "noEngineReferences": false
+}

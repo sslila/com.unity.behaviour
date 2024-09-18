@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:appui="Unity.AppUI.UI">
+  <appui:Icon name="Icon" class="SearchItem-Icon" />
+  <ui:Label text="Label" name="Label" class="SearchItem-Label" />  
+  <ui:VisualElement class="SearchItem-NextContainer">
+    <appui:Icon name="NextIcon" class="SearchItem-Icon__Next" />
+  </ui:VisualElement>
+</ui:UXML>

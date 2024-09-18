@@ -1,0 +1,4 @@
+<UXML xmlns="UnityEngine.UIElements">
+    <VisualElement class="NavigationDrawerButton-Icon"/>
+    <Label text="Button" class="NavigationDrawerButton-Label"/>
+</UXML>

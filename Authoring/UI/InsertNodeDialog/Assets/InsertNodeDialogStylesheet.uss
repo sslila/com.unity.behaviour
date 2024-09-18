@@ -1,0 +1,66 @@
+.InsertNodeDialog {
+
+}
+
+#Description {
+	margin: 4px;
+	white-space: normal;
+	color: var(--appui-foregrounds-50);
+}
+
+#DialogContainer {
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#Content {
+	flex-shrink: 1;
+}
+
+#unity-content-container {
+	flex-direction: row;
+	flex-wrap: Wrap;
+	justify-content: space-between;
+}
+
+.NodeOptionElement {
+	width: 230px;
+	margin: 4px;
+	padding: var(--appui-static-spacing-150);
+	justify-content: flex-start;
+	background-color: var(--appui-primary-300);
+	border-width: 1px;
+	border-color: var(--appui-primary-500);
+	border-radius: var(--appui-border-radius-sm);
+}
+
+.NodeOptionElement:hover {
+	background-color: var(--appui-primary-400);
+}
+
+#Node-Name {
+	white-space: normal;
+	-unity-font-style: bold;
+	font-size: var(--appui-font-sizes-100);
+	-unity-text-align: upper-left;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 4px;
+	color: var(--appui-color-white);
+}
+
+#Node-Description {
+	white-space: normal;
+	font-size: var(--appui-font-sizes-75);
+	-unity-text-align: upper-left;
+	overflow: scroll;
+	padding: 0;
+	margin: 0;
+}
+
+.Selected {
+	border-color: var(--appui-accent-100);
+	background-color: var(--appui-primary-400);
+	border-width: 2px;
+}

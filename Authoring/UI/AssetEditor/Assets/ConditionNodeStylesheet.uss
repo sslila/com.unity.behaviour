@@ -1,0 +1,27 @@
+.GraphNode #NodeValueContainer {
+    height: auto;
+    width: auto;
+}
+
+#ConditionFieldContainer {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.TwoLineNode #ConditionFieldContainer > Label {
+    align-self: center;
+}
+
+#ConditionFieldContainer > Label {
+    align-self: flex-start;
+}
+
+ConditionElement {
+    flex-direction: row;
+    align-self: flex-start;
+    height: 20px;
+}
+
+.ConditionElementMargin {
+    margin-top: 8px;
+}

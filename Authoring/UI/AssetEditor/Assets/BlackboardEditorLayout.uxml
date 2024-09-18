@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:mb="Unity.Behavior" xmlns:appui="Unity.AppUI.UI" xmlns:Graph="Unity.Behavior.GraphFramework">
+    <Graph:GraphToolbar name="GraphToolbar"/>
+    <appui:Divider size="S"/>
+    <ui:VisualElement name="BlackboardEditorPanel">
+    </ui:VisualElement>
+</ui:UXML>

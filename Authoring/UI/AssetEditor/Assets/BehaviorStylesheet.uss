@@ -1,0 +1,131 @@
+BehaviorGraphEditor {
+    flex-grow: 1;
+}
+
+#Blackboard #PanelContent {
+    min-width: 260px;
+    min-height: auto;
+}
+
+#Inspector #PanelContent {
+    min-width: 260px;
+    min-height: auto;
+}
+
+/* App UI canvas style override */
+.appui-canvas__background {
+    --grid-background-color: var(--appui-backgrounds-50);
+    --line-color: var(--appui-backgrounds-300);
+    --thick-line-color: var(--appui-backgrounds-300);
+    --thickness: 1;
+    --next-grid-scale-factor: 4;
+}
+
+BehaviorGraphView {
+    overflow: hidden;
+}
+
+#EditorView {
+    flex-grow: 1;
+}
+
+#EditorPanel {
+    flex-grow: 1;
+}
+
+#NavigationSelection {
+    flex-grow: 1;
+}
+
+#unity-dragline-anchor {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#LeftPanel #Blackboard #Header {
+    border-radius: 0;
+}
+
+.appui-icon--notebook--regular {
+    --unity-image: url("/Packages/com.unity.behavior/Authoring/UI/AssetEditor/Assets/Images/Icons/Notebook.png");
+}
+
+#AutoSaveToggle {
+    margin-top: 3px;
+    flex-direction: row-reverse;
+}
+
+#AutoSaveToggle > Label {
+    align-self: center;
+    min-width: 0;
+    margin-left: 3px;
+}
+
+#CreateBranchFrame {
+    background-color: rgb(36, 36, 36);
+    border-width: 3px;
+    padding: 3px;
+    width: auto;
+    height: auto;
+}
+
+#CreateBranchFrame #PanelContent {
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+}
+
+#CreateBranchFrame #Header {
+    background-color: rgba(63, 63, 63, 1.0);
+    width: auto;
+    height: 25px;
+}
+
+#CreateBranchFrame #HeaderLabel {
+    background-color: rgba(63, 63, 63, 1.0);
+    width: 100%;
+    height: 100%;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    font-size: 14px;
+}
+
+#CreateBranchFrame #InputDescription {
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    flex-grow: 1;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+
+#CreateBranchFrame #InputDescription .unity-base-field__input {
+    flex-direction: column;
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+#CreateBranchFrame #GenerateButton {
+    height: 20px;
+}
+
+#Blackboard #appui-appbar__action-container {
+    position: absolute;
+    right: 10px;
+}
+
+#BranchGenerationWidget #appui-appbar__bottom-border {
+    display: none;
+}
+
+#BranchGenerationWidget #FloatingPanelElement {
+    border-color: var(--appui-base-400);
+    border-radius: 8px;
+}
+
+#BranchGenerationWidget #FloatingPanelAppBar > #appui-appbar__bar {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+

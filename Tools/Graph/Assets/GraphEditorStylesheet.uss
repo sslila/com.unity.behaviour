@@ -1,0 +1,26 @@
+.GraphEditor {
+    flex-grow: 1;
+}
+
+.GraphView {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#EditorPanel {
+    flex-grow: 1;
+}
+
+#NavigationSelection {
+    flex-grow: 1;
+}
+
+#Blackboard {
+    min-width: 260px;
+    min-height: 200px;
+}
+
+#Inspector {
+    min-width: 260px;
+    min-height: 200px;
+}

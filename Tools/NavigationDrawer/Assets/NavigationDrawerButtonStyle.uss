@@ -1,0 +1,38 @@
+.NavigationDrawerButton {
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 24px;
+  min-width: 26px;
+  align-items: center;
+  border-left-width: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.NavigationDrawerButton:hover {
+  background-color: #383838;
+}
+
+.NavigationDrawer-Menu {
+  margin-top: 0px;
+}
+
+.NavigationDrawerButton-Icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.NavigationDrawerButton-Label {
+  margin-left: 4px;
+  margin-right: 30px;
+  color: #D2D2D2;
+  font-size: 14px;
+  -unity-font-style: bold;
+}
+
+.NavigationDrawerButton__Selected {
+  background-color: #393939;
+  border-left-color: #3C76C0;
+}

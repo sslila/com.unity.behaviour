@@ -1,0 +1,11 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras"
+         xmlns:ui="UnityEngine.UIElements"
+         xmlns:appui="Unity.AppUI.UI">
+    <ui:VisualElement name="ReturnButton" class="SearchView-NavigateButton">
+        <appui:IconButton name="ReturnIcon" icon="caret-left" quiet="true"/>
+        <ui:Label text="Item"/>
+    </ui:VisualElement>
+    <appui:ActionGroup name="SearchTabs" compact="true" justified="true" selection-type="Single" allow-no-selection="false"/>
+    <appui:SearchBar class="SearchView-SearchField" placeholder="Filter"/>
+    <ui:ListView name="SearchResults" item-height="20" class="SearchView-ListView__Results" focusable="false" />
+</ui:UXML>

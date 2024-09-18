@@ -1,0 +1,12 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:Graph="Unity.Behavior.GraphFramework">
+    <ui:VisualElement name="EventStartNodeTitle">
+        <ui:VisualElement name="StackedLines">
+            <ui:VisualElement name="ChannelLine"/>
+            <ui:VisualElement name="ChannelMessageCaption"/>
+            <ui:VisualElement name="MessageLine" class="NoChannelAssigned">
+                <ui:VisualElement name="Message"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+        <ui:VisualElement name="AssignFieldsElement"/>
+</ui:UXML>

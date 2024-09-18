@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:aid="Unity.Behavior" editor-extension-mode="False" xmlns:appui="Unity.AppUI.UI">
+            <ui:VisualElement name="GenAiRegion" class="Region">
+                <aid:HelpText name="GenAiHelpBox"/>
+                <appui:TextArea picking-mode="Ignore" name="GenAiDescriptionField" multiline="true"/>
+                <ui:VisualElement name="ButtonRegion">
+                    <appui:Button name="GenAiCreateButton" title="Create with AI" primary="true"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+</ui:UXML>

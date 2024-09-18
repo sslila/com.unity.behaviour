@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:appui="Unity.AppUI.UI">
+        <ui:VisualElement name="ElementContainer">
+                <ui:VisualElement name="TitleElement">
+                        <appui:Icon name="BlackboardAssetIcon"/>
+                        <ui:Label name="Name"/>
+                        <appui:IconButton name="CollapseIcon" icon="caret-down-small" quiet="true"/>
+                        <appui:IconButton name="EditButton" icon="pen" quiet="true"/>
+                </ui:VisualElement>
+                <ui:ListView name="Variables"
+                             reorderable="false"/>
+        </ui:VisualElement>
+</ui:UXML>

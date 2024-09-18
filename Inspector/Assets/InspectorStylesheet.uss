@@ -1,0 +1,28 @@
+.Inspector {
+    flex-grow: 1;
+}
+
+.unity-scroll-view__content-viewport {
+    padding-left: var(--appui-static-spacing-125);
+    padding-right: var(--appui-static-spacing-125);
+}
+
+.Inspector > Label {
+    padding-top: 8px;
+    margin: 0;
+}
+
+#ButtonContainer {
+    flex-direction: row-reverse;
+    align-self: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+#Content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+}

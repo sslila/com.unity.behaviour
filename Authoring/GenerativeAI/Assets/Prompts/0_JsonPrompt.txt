@@ -1,0 +1,98 @@
+Given the following format for action, composite, modifier nodes and parameters:
+Action nodes:
+ActionName, "description", parameter (type)
+Composite nodes:
+CompositeName, "description"
+Modifier nodes:
+ModifierName, "description", parameter (type)
+Parameters:
+ParameterName (Type)
+
+Available actions:
+{actions}
+
+Available composites:
+{composites}
+
+Available modifiers:
+{modifiers}
+
+Available parameters:
+{variables}
+
+Based on a description, provide me an answer of a tree structure in a JSON object format.
+If the described behavior cannot be found in the available actions, still include it in the JSON object (and make sure to create a description for it).
+If the description cannot generate a meaningful tree, please answer the following: Unable to generate.
+Modifiers nodes are placed before the branch they alter in the hierarchy. If the modifiers has multiple children, insert a sequence node (single child of the modifier) that contains the children nodes.
+
+Q: "The character waits for 5 seconds then says hello."
+A: {
+  "name": "Sequence",
+  "description": "Execute branches in order until one fails or all succeed",
+  "variables": [],
+  "nodes": [
+    {
+      "name": "Wait",
+      "description": "Wait for a specified number of seconds",
+      "variables": ["5"],
+      "nodes": []
+    },
+    {
+      "name": "Talk",
+      "description": "Show text in world-space above the Agent with the Sentence for a specified Duration",
+      "variables": ["Self", "hello"],
+      "nodes": []
+    }
+  ]
+}
+Q: "if speed is bigger than 5, self says hello otherwise wait 5 seconds"
+A: {
+  "name": "Conditional Branch",
+  "description": "Chooses one branch depending if the condition is true or false",
+  "variables": ["Speed","Greater","5"],
+  "nodes": [
+    {
+      "name": "Talk",
+      "description": "Show text in world-space above the Agent with the Sentence for a specified Duration",
+      "variables": ["Self","hello"],
+      "nodes": []
+    },
+    {
+      "name": "Wait",
+      "description": "Wait for a specified number of seconds",
+      "variables": ["5"],
+      "nodes": []
+    }
+  ]
+}
+Q: "Repeat these actions until failure: wait 5 seconds then destroy target"
+A: {
+  "name": "Repeat Until Failure",
+  "description": "Repeats until failure",
+  "variables": [],
+  "nodes": [
+    {
+      "name": "Sequence",
+      "description": "Execute branches in order until one fails or all succeed",
+      "variables": [],
+      "nodes": [
+        {
+          "name": "Wait",
+          "description": "Wait for a specified number of seconds",
+          "variables": ["5"],
+          "nodes": []
+        },
+        {
+          "name": "DestroyTarget",
+          "description": "Destroy the Target",
+          "variables": ["Target"],
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}
+
+Please complete the answer for this one:
+Q: {description}
+A:

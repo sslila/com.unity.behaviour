@@ -1,0 +1,34 @@
+{
+    "name": "Unity.Behavior",
+    "rootNamespace": "Unity.Behavior",
+    "references": [
+        "GUID:1491147abca9d7d4bb7105af628b223e",
+        "GUID:0a778ec1d5a6fe645b6a6e10399e967b",
+        "GUID:20ee76f6d94ae4b0595f3ceb1c5359a7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.netcode.gameobjects",
+            "expression": "",
+            "define": "NETCODE_FOR_GAMEOBJECTS"
+        },
+        {
+            "name": "com.unity.modules.physics2d",
+            "expression": "",
+            "define": "UNITY_PHYSICS_2D"
+        },
+        {
+            "name": "Unity",
+            "expression": "6000.0",
+            "define": "ENABLE_UXML_UI_SERIALIZATION"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,5 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:Graph="Unity.Behavior.GraphFramework">
+    <Graph:GraphToolbar name="GraphToolbar"/>
+    <ui:VisualElement name="EditorPanel">
+    </ui:VisualElement>
+</ui:UXML>

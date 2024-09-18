@@ -1,0 +1,6 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="NavigationDrawer-ContentContainer">
+      <uiex:NavigationDrawerButton name="NavigationDrawer-ButtonButton" text="" icon="Icons/menu-icon" class="NavigationDrawer-Menu"/>
+        <ui:VisualElement class="NavigationDrawer-Content"/>
+    </ui:VisualElement>
+</ui:UXML>

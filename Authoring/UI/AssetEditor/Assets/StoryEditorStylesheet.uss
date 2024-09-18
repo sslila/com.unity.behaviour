@@ -1,0 +1,67 @@
+StoryEditor {
+    flex-grow: 1;
+}
+
+#StoryEditor #PropertiesRegion {
+    margin-top: 6px;
+    flex-shrink: 0;
+    max-height: 260px;
+}
+
+.PropertyField {
+    flex-direction: row;
+}
+
+#StoryField TextInput {
+    white-space: normal;
+}
+
+StoryFieldWithValidation TextArea {
+    min-height: 30px;
+    height: 30px;
+}
+
+#StoryEditor #PropertiesContainer {
+    flex-direction: column;
+}
+
+#StoryEditor .unity-help-box__label {
+    font-size: var(--appui-font-sizes-75);
+}
+
+#StoryEditor .PropertyField {
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.StoryDropdown {
+    width: 50%;
+    -unity-text-align: middle-left;
+    justify-content: space-between;
+    padding-left: 4px;
+}
+
+#StoryEditor .PropertyField Label {
+    width: 50%;
+    -unity-font-definition: url('/Packages/com.unity.dt.app-ui/PackageResources/Fonts/Inter-SemiBold.ttf');
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+    color: var(--appui-color-white);
+}
+
+StoryFieldWithValidation TextElement {
+    margin-top: 4px;
+}
+
+#StoryConfirmButton {
+    flex-grow: 0;
+    align-self: flex-end;
+}
+
+#PropertiesRegion {
+    max-height: 260px;
+}

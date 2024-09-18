@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="HelpTextBox">
+        <ui:VisualElement name="HelpTextBorder"/>
+        <ui:Label name="Text"/>
+    </ui:VisualElement>
+</ui:UXML>

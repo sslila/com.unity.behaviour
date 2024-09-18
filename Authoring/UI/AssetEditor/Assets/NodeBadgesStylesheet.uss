@@ -1,0 +1,23 @@
+#Badges {
+    position: absolute;
+    top: 10px;
+    left: -16px;
+}
+
+#BreakpointContainer {
+    align-items: center;
+    display: none;
+}
+
+#Breakpoint {
+    width: 14px;
+    height: 14px;
+    background-color: var(--appui-destructive-100);
+    border-radius: 12px;
+    border-color: rgb(10, 10, 10);
+    border-width: 1px;
+}
+
+.BreakpointEnabled #BreakpointContainer {
+    display: flex;
+}

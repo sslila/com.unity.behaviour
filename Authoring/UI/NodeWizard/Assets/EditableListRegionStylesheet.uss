@@ -1,0 +1,37 @@
+#EditableListContainer {
+  flex-grow: 1;
+}
+
+#EditableListContainer {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+#AddItemButton {
+  width: 100%;
+  margin-top: 8px;
+}
+
+#EditableListContainer {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8px;
+}
+
+#ItemField {
+  width: 100%;
+  min-height: 22px;
+  align-self: center;
+  justify-content: center;
+}
+
+#RemoveItemButton {
+  height: 22px;
+  width: 22px;
+  margin-left: 4px;
+}
+
+#ListItemContainer {
+  max-height: 260px;
+}

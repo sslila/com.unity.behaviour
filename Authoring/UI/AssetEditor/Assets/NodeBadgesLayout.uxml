@@ -1,0 +1,5 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" name="Badges">
+        <ui:VisualElement name="BreakpointContainer">
+            <ui:VisualElement name="Breakpoint"/>
+        </ui:VisualElement>
+</ui:UXML>

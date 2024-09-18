@@ -1,0 +1,3 @@
+.Invalid #unity-text-input {
+  color: var(--appui-destructive-100);
+}

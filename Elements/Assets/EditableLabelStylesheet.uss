@@ -1,0 +1,36 @@
+.EditableLabel {
+    min-width: 70px;
+    min-height: 20px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#Text {
+    margin: 0px;
+    padding: 0px;
+}
+
+#TextField {
+    display: none;
+    margin: 0px;
+}
+
+#unity-text-input {
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
+    background-color: transparent;
+}
+
+.unity-text-element {
+    padding: 0px;
+}
+
+
+.Editing #Text {
+    display: none;
+}
+
+.Editing #TextField {
+    display: flex;
+}

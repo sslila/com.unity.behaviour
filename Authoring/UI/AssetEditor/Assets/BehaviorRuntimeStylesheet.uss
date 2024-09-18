@@ -1,0 +1,33 @@
+Label {
+    color: #D2D2D2;
+}
+
+.unity-text-element {
+    color: #D2D2D2;
+}
+
+Button {
+    background-color: #585858;
+    border-color: #242424;
+}
+
+.unity-toggle__checkmark {
+    color: #D2D2D2;
+    -unity-background-image-tint-color: rgb(84, 84, 84);
+}
+
+TextInput {
+    background-color: #2A2A2A;
+}
+
+.unity-text-element--inner-input-field-component {
+    color: #D2D2D2;
+}
+
+Foldout {
+    flex-shrink: 0;
+  }
+
+.unity-base-text-field__input {
+    background-color: #2A2A2A;
+}

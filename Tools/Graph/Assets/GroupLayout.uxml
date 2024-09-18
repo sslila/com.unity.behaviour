@@ -1,0 +1,16 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Info">
+        <ui:VisualElement name="InfoContainer">
+            <ui:VisualElement name="IconContainer">
+                <ui:VisualElement name="Icon"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="GroupButton"/>
+            <ui:VisualElement name="GroupInfo">
+                <ui:Label name="Name" text="Name"/>
+                <ui:TextField name="NameField" text="Name"/>
+            </ui:VisualElement>
+            <ui:Foldout name="FoldoutButton"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="ContentContainer"/>
+</ui:UXML>

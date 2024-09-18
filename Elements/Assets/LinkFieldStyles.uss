@@ -1,0 +1,293 @@
+.LinkField {
+    flex-direction: row;
+    margin-left: 2px;
+    margin-right: 2px;
+    align-items: center;
+    align-content: center;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: 20px;
+    border-width: 1px;
+}
+
+.Runtime-Object-Field {
+    padding-left: 2px;
+    border-width: 1px;
+    border-radius: var(--appui-border-radius-md);
+    background-color: #2A2A2A;
+    border-color: var(--appui-alias-field-border-color-default);
+}
+
+BaseLinkField {
+    border-width: 1px;
+    border-radius: var(--appui-border-radius-md);
+    background-color: #2A2A2A;
+    border-color: var(--appui-alias-field-border-color-default);
+}
+
+.Runtime-Object-Field .unity-base-field__label {
+    color: #C4C4C4;
+}
+
+.Linked {
+    margin: 0;
+    margin-left: 2px;
+    margin-right: 0;
+    background-color: initial;
+    border-color: initial;
+    border-width: 0;
+    border-radius: 0;
+    flex-shrink: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.LinkField .unity-base-field {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.LinkField #unity-text-input {
+    min-width: 20px;
+}
+
+.LinkField .unity-text-element {
+    flex-grow: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: initial;
+}
+
+.LinkField .unity-color-field {
+    max-width: 100px;
+}
+
+.LinkField .unity-object-field-display__icon {
+    display: none;
+}
+
+.LinkFieldContainer {
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.LinkButtonContainer {
+    position: absolute;
+    right: 0px;
+    height: 120%;
+    width: 20px;
+}
+
+.LinkButton {
+    width: 12px;
+    height: 12px;
+    right: 0px;
+    margin-left: 4px;
+    margin-right: 6px;
+    position: absolute;
+    flex-shrink: 0;
+    color: var(--appui-foregrounds-50);
+}
+
+.LinkButton:disabled {
+    --unity-image-tint-color: var(--appui-foregrounds-25);
+}
+
+.LinkButton:hover {
+    --unity-image-tint-color: white;
+}
+
+.LinkButton:hover:disabled {
+    --unity-image-tint-color: var(--appui-foregrounds-25);
+}
+
+BaseLinkField {
+    padding-left: 6px;
+}
+
+BaseLinkField .LinkButton {
+    position: relative;
+    right: auto;
+}
+
+.UnlinkButton {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    display: none;
+    color: white;
+    position: absolute;
+    right: -4px;
+    top: -2px;
+    --unity-image-tint-color: white;
+}
+
+.Linked .UnlinkButton {
+    display: flex;
+    visibility: hidden;
+}
+
+.Linked:hover .UnlinkButton {
+    visibility: visible;
+}
+
+.LinkedLabelContainer {
+    -unity-text-align: middle-center;
+    justify-content: center;
+    display: none;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+.unity-scroll-view {
+    flex-grow: 0;
+}
+
+.unity-base-field {
+    align-items: center;
+}
+
+.Linked {
+    border-color: #242424;
+    border-top-color: #0D0D0D;
+    -unity-font-definition: url('/Packages/com.unity.dt.app-ui/PackageResources/Fonts/Inter-SemiBold.ttf');
+}
+
+.Linked .LinkedLabelContainer {
+    display: flex;
+}
+
+.Linked .LinkedLabelContainer > Label {
+    margin: 0;
+}
+
+.Linked .LinkButton {
+    display: none;
+}
+
+.Linked .LinkButtonContainer {
+    display: none;
+}
+
+.FieldNameLabel {
+    color: #BCBCBC;
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
+}
+
+.FieldContainer {
+    height : 100%;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#InputField {
+    height: 20px;
+    max-height: 20px;
+    border-radius: var(--appui-border-radius-md);
+    background-color: #2A2A2A;
+    border-color: var(--appui-alias-field-border-color-default);
+}
+
+#InputField > Label {
+    margin: 0;
+    opacity: .5;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#InputField:hover {
+    border-color: var(--appui-alias-field-border-color-hover);
+}
+
+#InputField:hover:disabled {
+    border-color: initial;
+}
+
+#InputField:focus {
+    border-color: var(--appui-alias-field-border-color-focus);
+}
+
+.Linked .FieldContainer {
+    display: none;
+}
+
+.FieldContainer Toggle {
+    align-self: flex-end;
+}
+
+.FieldTypeIcon {
+    display: none;
+    width: 14px;
+    height: 14px;
+    align-self: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+.Linked .FieldTypeIcon {
+    opacity: 1;
+}
+
+.FieldTypeIcon_Assigned {
+    /*display: flex;*/
+}
+
+.PrefixLabel {
+    max-width: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.LinkedLabel {
+    color: #FFF;
+    margin-right: 2px;
+    flex-shrink: 0;
+}
+
+EnumLinkField #appui-picker__trailingcontainer {
+    min-width: 40px;
+}
+
+EnumLinkField #appui-picker__caret {
+    margin-right: 2px;
+    margin-left: 2px;
+    flex-shrink: 0;
+}
+
+.appui-vector4field {
+    flex-direction: row;
+    padding-right: 12px;
+}
+
+.appui-vector2field {
+    padding-right: 12px;
+    flex-direction: row;
+}
+
+.appui-vector3field {
+    flex-direction: row;
+    padding-right: 12px;
+}
+
+#appui-vector4field__row {
+    margin-right: 4px;
+    margin-bottom: 0;
+}
+
+.appui-toggle {
+    margin-right: 0;
+}
+
+Toggle {
+    padding: 4px;
+    padding-right: 10px;
+}

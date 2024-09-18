@@ -1,0 +1,90 @@
+SequenceGroup > #SelectionBorder > #NodeContentContainer {
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    background-color: rgba(40, 40, 40, 1.0);
+    padding: 4px;
+    min-width: 120px;
+}
+
+#ContentContainer {
+    margin: 8px;
+    margin-top: 0px;
+    flex-grow: 1;
+}
+
+#InfoContainer {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 4px;
+}
+
+#GroupButton {
+    width: 18px;
+    height: 18px;
+    background-image: url('/Packages/com.unity.behavior/Authoring/UI/NodeWizard/Assets/Icons/baseline_more_horiz_white_24dp.png');
+    align-self: center;
+}
+
+#GroupInfo {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    /*margin: 4px;*/
+    display: none;
+}
+
+/*.NamedGroup #GroupInfo {
+    display: flex;
+}
+
+.NamedGroup #GroupButton {
+    display: none;
+}*/
+
+#Name {
+    /*display: none;*/
+    min-height: 18px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+}
+
+#IconContainer {
+    width: 26px;
+}
+
+#IconContainer #Icon {
+    width: 24px;
+    height: 24px;
+}
+
+#NameField {
+    align-self: center;
+    display: none;
+    margin-top: 0;
+}
+
+#Sequence .GraphNode #SelectionBorder {
+    border-width: 0;
+}
+
+#Sequence .GraphNode .Selected:hover #SelectionBorder {
+    border-width: 0;
+    top: auto;
+}
+
+#Sequence .Selected:hover #SelectionBorder {
+    border-width: 0;
+    top: auto;
+}
+
+#Sequence .Selected #SelectionBorder {
+    border-width: 0;
+    top: auto;
+}

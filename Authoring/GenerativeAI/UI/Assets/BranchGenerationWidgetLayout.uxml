@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:aid="Unity.Behavior" xmlns:appui="Unity.AppUI.UI">
+    <appui:AppBar name="BranchGenerationWidgetAppBar">
+        <appui:ActionButton name="CloseButton" quiet="true" icon="x"/>
+    </appui:AppBar>
+    <ui:VisualElement name ="WidgetContentContainer">
+        <aid:HelpText name="HelpText"/>
+        <appui:TextArea name="PromptTextField" auto-resize="true"/>
+        <ui:VisualElement name="ButtonRegion">
+            <appui:ActionGroup>
+                <appui:Button name="CreateButton" title="Use Generative AI"/>
+            </appui:ActionGroup>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

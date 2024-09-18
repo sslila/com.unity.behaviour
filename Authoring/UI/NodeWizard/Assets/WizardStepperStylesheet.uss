@@ -1,0 +1,125 @@
+.WizardStepper {
+    min-width: 300px;
+}
+
+#WizardStepperContainer {
+    flex-grow: 1;
+    height: auto;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#WizardAppBar {
+    padding: 6px;
+    background-color: transparent;
+    --box-shadow-color: transparent;
+    flex-shrink: 0;
+}
+
+#WizardAppBar .appui-localized-text {
+    -unity-text-align: middle-center;
+}
+
+#appui-appbar__bar {
+    background-color: transparent;
+}
+
+#appui-appbar__bottom-border {
+    display: none;
+}
+
+#appui-appbar__action-container {
+    position: absolute;
+    right: 6px;
+}
+
+#WizardContentContainer {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0 12px;
+}
+
+#WizardButtonContainer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 12px 12px;
+    flex-shrink: 0;
+}
+
+#WizardButtonContainer > Button {
+    margin-top: 12px;
+}
+
+/* Custom styles for the stepper preview element. */
+
+#PreviewElement {
+    align-self: center;
+    position: absolute;
+    top: -32px;
+    flex-direction: row;
+    height: auto;
+}
+
+.NodePreview {
+    align-self: flex-end;
+    align-items: center;
+    height: auto;
+}
+
+.ConditionPreview {
+    align-self: center;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--appui-backgrounds-300);
+    border-radius: var(--appui-border-radius-md);
+    padding: 4px;
+    height: 32px;
+}
+
+.ConditionPreview > Label {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.GraphNode {
+    bottom: 0;
+    align-self: center;
+}
+
+#PortPreviewContainer {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Action Label {
+    -unity-text-align: middle-center;
+}
+
+#Ports-Preview {
+    margin-top: 60px;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#Composite-Preview {
+    bottom: 20px;
+    align-items: center;
+}
+
+#Composite-Preview.Composite-Preview__TwoLineNode {
+    bottom: 70px;
+}
+
+#Composite-Preview.Composite-Preview__HasPorts {
+    bottom: 120px;
+}
+
+#Composite-Preview.Composite-Preview__TwoLineNode.Composite-Preview__HasPorts {
+    bottom: 160px;
+}
+
+#Event-Preview {
+    bottom: 80px;
+}

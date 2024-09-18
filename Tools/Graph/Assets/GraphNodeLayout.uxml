@@ -1,0 +1,21 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:Graph="Unity.Behavior.GraphFramework">
+    <ui:VisualElement name="InputPortsContainer" class="PortsContainer">
+    </ui:VisualElement>
+    <ui:VisualElement name="SelectionBorder">
+        <ui:VisualElement name="NodeColor"/>
+    <ui:VisualElement name="NodeContentContainer">
+        <ui:VisualElement name="NodeIcon"/>
+        <ui:VisualElement name="Content">
+            <ui:VisualElement name="NodeTitle">
+                <ui:Label name="NodeTitleLabel"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="NodeValueContainer"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+        <ui:VisualElement name="DebugIconContainer">
+            <ui:VisualElement name="DebugIcon"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="OutputPortsContainer" class="PortsContainer">
+    </ui:VisualElement>
+</ui:UXML>

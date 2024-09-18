@@ -1,0 +1,5 @@
+Given the following correction, delimited by quotes:
+"{correction}"
+
+Please provide a corrected version of the tree structure.
+Do not output any other text except the answer.

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:appui="Unity.AppUI.UI">
+        <ui:VisualElement name="BlackboardViewContent">
+            <ui:ListView name="Variables"
+                         reorderable="true"/>
+        </ui:VisualElement>
+</ui:UXML>

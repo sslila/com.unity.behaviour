@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:aid="Unity.Behavior" editor-extension-mode="False">
+        <ui:VisualElement name="StoryRegion" class="Region">
+            <aid:HelpText name="StoryInfoHelpText"/>
+            <aid:StoryFieldWithValidation picking-mode="Ignore" name="StoryField" />
+        </ui:VisualElement>
+        <ui:ScrollView name="PropertiesRegion" class="Region RegionLine" horizontalScrollerVisibility="hidden">
+            <ui:VisualElement name="PropertiesContainer" />
+        </ui:ScrollView>
+</ui:UXML>

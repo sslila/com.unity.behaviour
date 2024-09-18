@@ -1,0 +1,27 @@
+.Runtime-Object-Field {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 0px;
+}
+
+.Runtime-Object-Field .unity-base-field__label {
+    min-width: 20px;
+    flex-shrink: 1;
+    -unity-text-align: middle-center;
+}
+
+.Runtime-Object-Field.HasValue .unity-base-field__label {
+    display: none;
+}
+
+.unity-base-field__input {
+    flex-direction: row;
+    align-items: center;
+}
+
+.Runtime-Object-Field_Icon {
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    margin-right: 4px;
+}

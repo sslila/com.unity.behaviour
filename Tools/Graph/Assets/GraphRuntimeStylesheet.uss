@@ -1,0 +1,104 @@
+Label {
+    color: #D2D2D2;
+}
+
+.unity-text-element {
+    color: #D2D2D2;
+}
+
+Button {
+    background-color: #585858;
+    border-color: #242424;
+}
+
+.unity-toggle__checkmark {
+    color: #D2D2D2;
+    -unity-background-image-tint-color: rgb(84, 84, 84);
+}
+
+TextInput {
+    background-color: #2A2A2A;
+}
+
+.unity-text-element--inner-input-field-component {
+    color: #D2D2D2;
+}
+
+Foldout {
+    flex-shrink: 0;
+}
+
+.unity-base-text-field__input {
+    background-color: #2A2A2A;
+}
+
+#Toolbar {
+    background-color: #3C3C3C;
+}
+
+#Blackboard #Header {
+    background-color: #3E3E3E;
+    border-color: #191919;
+    margin-top: 1px;
+}
+
+.BlackboardVariable {
+    min-height: 58px;
+}
+
+.BlackboardVariable #Blackboard-Field_Capsule {
+    background-color: #383838;
+    height: 100%;
+}
+
+.BlackboardVariable #Info Label {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.BlackboardVariable .unity-composite-field__input {
+    flex-direction: row;
+}
+
+.BlackboardVariable .unity-composite-field Label {
+    min-width: 10px;
+    padding-left: 6px;
+    flex-direction: row-reverse;
+}
+
+.BlackboardVariable .unity-enum-field__input {
+    background-color: #585858;
+    padding: 4px;
+}
+
+.unity-list-view__item #Container:hover {
+    background-color: #585858;
+}
+
+.Editing #NameField #unity-text-input {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.BlackboardVariable .unity-base-field {
+    height: 24px;
+}
+
+.BlackboardVariable {
+    font-size: 10px;
+}
+
+.BlackboardVariable #unity-text-input {
+    padding: 5px;
+    border-color: #191919;
+    border-radius: 3px;
+}
+
+.BlackboardVariable .unity-composite-field__field {
+    margin: 0;
+}
+
+.BlackboardVariable #unity-checkmark {
+    background-color: #2A2A2A;
+    border-color: #191919;
+}

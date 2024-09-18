@@ -1,0 +1,22 @@
+TutorialAnimation {
+    height: 386px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.appui-dialog__heading {
+    display: none;
+}
+
+Button {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+Dialog {
+   padding: 18px;
+}
+
+LocalizedTextElement {
+    -unity-text-align: middle-center;
+}

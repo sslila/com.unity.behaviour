@@ -1,0 +1,79 @@
+.GraphView {
+    flex-grow: 1;
+    align-items: center;
+  }
+
+#Viewport {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-self: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.GraphContent {
+    position: absolute;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+
+.Sequence {
+    flex-grow: 0;
+}
+
+.NodeIcon {
+  width: 32px;
+  height: 32px;
+}
+
+#InputPortsContainer {
+  /*display: none;*/
+}
+
+#InputPort {
+  --port-data-flow: "input";
+}
+
+.Edge {
+    color: white;
+    --edge-thickness: 2.0;
+}
+
+.Edge:hover {
+    color: rgba(68, 192, 255, 255);
+    --edge-thickness: 4.0;
+}
+
+.Edge.Selected {
+    color: rgba(68, 192, 255, 255);
+    --edge-thickness: 2.0;
+}
+
+.Edge.DebugHighlight {
+    color: rgba(68, 192, 255, 200);
+    --edge-thickness: 2.0;
+}
+
+.HighlightInputs .Edge {
+    opacity: 0.4;
+}
+
+ .HighlightInputs .Edge.ActiveEdgeConnectManipulator {
+    opacity: 1.0;
+ }
+
+.appui-canvas__background {
+    --grid-background-color: var(--appui-color-dark-gray-200);
+}
+
+.appui-canvas__horizontal-scroller,
+.appui-canvas__vertical-scroller {
+    visibility: hidden;
+}
+
+.GraphView_SelectionBox {
+    border-color: var(--appui-color-blue-1000);
+}

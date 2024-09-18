@@ -1,0 +1,5 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:Graph="Unity.Behavior.GraphFramework">
+        <ui:VisualElement name="Port-Socket-Fill"/>
+        <ui:VisualElement name="Port-Icon"/>
+        <ui:VisualElement name="Port-Edge"/>
+</ui:UXML>

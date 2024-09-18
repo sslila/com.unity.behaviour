@@ -1,0 +1,49 @@
+{
+  "name": "com.unity.behavior",
+  "displayName": "Behavior",
+  "version": "1.0.0-pre.1",
+  "description": "An early stage graph tool for authoring and running behavior trees. With the Unity Muse subscription, you can use LLM to generate behavior trees from text prompts and create code for new action nodes. ",
+  "keywords": [
+    "ai",
+    "behaviour trees"
+  ],
+  "dependencies": {
+    "com.unity.dt.app-ui": "2.0.0-pre.10",
+    "com.unity.modules.unitywebrequest": "1.0.0",
+    "com.unity.modules.animation": "1.0.0",
+    "com.unity.modules.ai": "1.0.0",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.burst": "1.7.2",
+    "com.unity.collections": "2.1.4"
+  },
+  "samples": [
+    {
+      "displayName": "Unity Behavior Example",
+      "description": "A simple Behavior example.",
+      "path": "Samples~/Example"
+    },
+    {
+      "displayName": "Unity Serialization Example",
+      "description": "A simple serialization example.",
+      "path": "Samples~/Serialization"
+    }
+  ],
+  "relatedPackages": {
+    "com.unity.behavior.tests": "1.0.0-pre.1"
+  },
+  "_upm": {
+    "changelog": "### Added\n- BlackboardVariable support for various Resource types.\n- BlackboardVariables of type UnityEngine.Object can now have an embedded value in their field (previously needed to set it in the GameObject's inspector).\n- Added new behaviors to StartOnEvent node (Default, Restart, Once).  \n- Blackboard assets can now be created through the Project view Create menu.\n- Added serialization/deserializatioon support for graph, blackboard and node values to JSON. Added demonstation sample.\n- Allow using `TooltipAttribute` on BlackboardVariables to display a tooltip.\n- Can now right click on a Blackboard Variable to copy its GUID.\n- Can now right click on a Blackboard Variable to copy its GUID.\n- Inspector will now display an inspection of the behavior graph, when nothing else is being selected.\n- The Story button on the editor toolbar has been removed, and the graph's subgraph representation can now be edited through the Inspector.\n- Transform Blackboard Variable type to the default blackboard options.\n- Can add Blackboard references to graphs.\n- Shared variables that are shared between instances of the same graph.\n- Run Subgraph node combines now two nodes, a static Run Subgraph and the new Run Subgraph Dynamic, which can be used to run graphs dynamically on runtime.\n- Subgraph variables can now be added on the Blackboard.\n- Adds new built-in nodes\n- Transform Blackboard Variable type to the default blackboard options.\n- Can add Blackboard references to graphs.\n- Shared variables that are shared between instances of the same graph.\n- Run Subgraph node combines now two nodes, a static Run Subgraph and the new Run Subgraph Dynamic, which can be used to run graphs dynamically on runtime.\n- Subgraph variables can now be added on the Blackboard.\n\n### Changed\n\n- AppUI dependency updated to 2.0.0-pre.6.\n- Blackboard, Node Wizard and Condition Wizard now use a search window for variables.\n- Removed variable icons.\n- Creation wizards fields will be automatically focused when shown.\n- Replaced icons for behavior graph agent and the graph asset with new designs.\n- Updated node filenames and class names to have appropriate postfixes.\n- Replaced all mouse events & usages to pointer events.\n- Updated MoveToLocation and MoveToTarget logic for slowing down as target reached to use a distance from target instead of Min(Speed, Distance);\n- Updated blackboard variable field assignment to support implicit casting between GameObject and components, components and GameObjects as well as components of different types.\n- Moved existing built-in nodes to package namespace\n- Updated built-in nodes categories\n- Merged Repeat nodes into a single node.\n- Merged Run in Parallel nodes into a single node.\n- Updated all tutorial images to be JPEG intead of PNG for a significant memory saving.\n- Start node repeat field is no longer a link field.\n\n### Fixed\n\n- Disabled inspector buttons for editing the definitions of built-in nodes.\n- Inspector showing buttons for editing the definitions of built-in nodes.\n- Fixed custom node definition editing not cleaning up existing properties.\n- Crashes on Domain reload caused by OnAssetsSave().\n- Performance when dragging nodes around a graph.\n- Fixed newly created Conditions not being automatically added to the selected Conditional node.\n- Fixed RepeatWhile node behaving like a do while.\n- Conditions not getting copied properly when a conditional node was duplicated.\n- Fixed navigation nodes sometimes stalling after being called successively.\n- Fixed click events going through to elements underneath search menu items.\n- Sequence insertion indicator didn't render at the correct width when dragging a node on top of a node then moving the mouse ontop of another node.\n- Multiple instances of graphs being kept in memory when processed on save.\n- Fixed pressing delete on an empty graph adding unnecessary command.\n- Inheriting from another Node will correctly display the inherited Blackboard Variables.\n- Fixed Graph Editor title blocking interaction with Open and Debug buttons.\n- Crashes on Domain reload caused by OnAssetsSave().\n- Fixed asset name in graph editor not updating when asset name changed on disc.\n- Fixed newly created Conditions not being automatically added to the selected Conditional node.\n- Fixed RepeatWhile node behaving like a do while.\n- Conditions not getting copied properly when a conditional node was duplicated.\n- Fixed navigation nodes sometimes stalling after being called successively.\n- Fixed click events going through to elements underneath search menu items.\n\n### Known Issues\n- Clearing a node field, saving and reverting the asset in source control does not restore the field value.\n- PlayParticleSystem internal pooling does not support runtime deserialization."
+  },
+  "upmCi": {
+    "footprint": "89788cb2984010fa52ceba18ab38a343ce7cc47d"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.behavior@1.0/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.ai.designer-monorepo.git",
+    "type": "git",
+    "revision": "90e6000228f65dce55838d745587bd46fa25e5dc"
+  },
+  "_fingerprint": "1dc6ace6a5e230e483fccc602ed5fe9209dfc4de"
+}

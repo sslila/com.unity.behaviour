@@ -1,0 +1,25 @@
+CreateNodeButton {
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-width: 0.5px;
+    border-color: rgba(255, 255, 255, 0.8);
+    margin-top: 4px;
+    border-radius: 3px;
+    align-items: center;
+    max-width: 200px;
+    align-self: center;
+
+    /*font-size: 16;*/
+    /*display: none;*/
+}
+
+CreateNodeButton:hover {
+    border-color: rgba(255, 255, 255, 1.0);
+    border-width: 0.5px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+BehaviorEditorView:hover CreateNodeButton {
+    display: flex;
+}

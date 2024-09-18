@@ -1,0 +1,182 @@
+FloatingPanel {
+    position: absolute;
+    min-width: 260px;
+    min-height: 100px;
+}
+
+#FloatingPanelElement {
+    margin: 6px;
+    align-items: stretch;
+    height: 100%;
+    border-width: 1px;
+    border-radius: var(--appui-alias-control-border-radius);
+    border-color: var(--appui-backgrounds-50);
+    background-color: var(--appui-backgrounds-200);
+    --box-shadow-offset-y: 4;
+    --box-shadow-spread: 0;
+    --box-shadow-blur: 15;
+    --box-shadow-color: rgba(0,0,0,.5);
+}
+
+#PanelContent {
+    flex-grow: 1;
+    overflow: scroll;
+    padding: var(--appui-static-spacing-25);
+}
+
+#FloatingPanelAppBar > #appui-appbar__bar {
+    background-color: var(--appui-backgrounds-200);
+    border-radius: var(--appui-alias-control-border-radius);
+    height: 100%;
+}
+
+#FloatingPanelAppBar {
+    height: 40px;
+}
+
+#FloatingPanelAppBar .appui-localized-text {
+    -unity-text-align: middle-center;
+    -unity-font-definition: url('/Packages/com.unity.dt.app-ui/PackageResources/Fonts/Inter-SemiBold.ttf');
+}
+
+#FloatingPanelAppBar .appui-appbar__flexible-space {
+    background-color: initial;
+}
+
+#CloseButton {
+    display: none;
+}
+
+#FloatingPanelAppBar #appui-appbar__action-container {
+    position: absolute;
+    right: 10px;
+}
+
+#CollapseTitleContainer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#CollapseTitleContainer #appui-appbar__compact-title {
+    position: relative;
+}
+
+#CollapseIcon {
+    align-self: center;
+    margin-left: 4px;
+    width: 14px;
+    height: 14px;
+}
+
+.CollapsedPanel {
+    height: 52px;
+    min-height: 52px;
+    max-height: 52px;
+}
+
+.ExpandedPanel #PanelContent  {
+    display: flex;
+}
+
+.CollapsedPanel #FloatingPanelElement {
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+}
+
+.CollapsedPanel #PanelContent  {
+    display: none;
+    height: 0;
+}
+
+.ExpandedPanel #FloatingPanelElement  {
+    height: 100%;
+}
+
+.CollapsedPanel #appui-appbar__bottom-border {
+    display: none;
+}
+
+/* Custom AppBar styling to fit the Muse Behavior design */
+
+#appui-appbar__bottom-border {
+    border-bottom-color: var(--appui-backgrounds-300);
+    background-color: transparent;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* Floating panel resize frame borders */
+
+#Right {
+    width: 10px;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    cursor: resize-horizontal;
+}
+
+#Lower {
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    cursor: resize-vertical;
+}
+
+#Left {
+    width: 10px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    cursor: resize-horizontal;
+}
+
+#Upper {
+    width: 100%;
+    height: 10px;
+    top: 0;
+    cursor: resize-vertical;
+}
+
+#UpperLeft {
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 0;
+    cursor: resize-up-left;
+}
+
+#LowerRight {
+    width: 10px;
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    cursor: resize-up-left;
+}
+
+#LowerLeft {
+    width: 10px;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    cursor: resize-up-right;
+}
+
+#UpperRight {
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 0;
+    cursor: resize-up-right;
+}
+
+.CollapsedPanel #UpperRight, .CollapsedPanel #UpperLeft, .CollapsedPanel #LowerLeft, 
+.CollapsedPanel #LowerRight, .CollapsedPanel #Lower, .CollapsedPanel #Upper {
+    visibility: hidden;
+}
+
+.FrameBorder {
+    position: absolute;
+}

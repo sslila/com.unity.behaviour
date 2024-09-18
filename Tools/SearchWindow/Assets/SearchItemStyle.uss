@@ -1,0 +1,65 @@
+.SearchItem {
+  border-radius: var(--appui-alias-control-border-radius);
+  flex-direction: row;
+  align-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: auto;
+}
+
+.SearchItem:checked {
+  background-color: initial;
+}
+
+.SearchItem-Label {
+  -unity-text-align: middle-left;
+  font-size: var(--appui-font-sizes-100);
+  -unity-font-definition: url('/Packages/com.unity.dt.app-ui/PackageResources/Fonts/Inter-Regular.ttf');
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+  margin: 0;
+  align-self: center;
+}
+
+.SearchItem-NextContainer {
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.SearchItem-Icon {
+  height: 16px;
+  width: 16px;
+  flex-shrink: 0;
+  margin: 2px;
+}
+
+.SearchView_NoIcons .SearchItem-Icon {
+  visibility: hidden;
+  width: 10px;
+  display: none;
+}
+
+.SearchItem-Icon__Next {
+  height: 16px;
+  width: 16px;
+  flex-shrink: 0;
+}
+
+.SearchItem:checked {
+  background-color: var(--appui-alias-actions-background-color-selected);
+}
+
+.SearchItem:hover {
+  background-color: var(--appui-color-transparent-black-100);
+}
+
+.SearchItem:hover .SearchItem-Label {
+  color: var(--appui-alias-actions-foreground-focus);
+}
+
+.HiddenIcon {
+  visibility: hidden;
+}

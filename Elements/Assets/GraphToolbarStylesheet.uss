@@ -1,0 +1,67 @@
+.GraphToolbar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    padding: 8px;
+    background-color: var(--appui-backgrounds-200);
+}
+
+ActionGroup {
+    flex-grow: 0;
+    margin-left: 4px;
+    margin-right: 4px
+}
+
+#LeftContainer {
+   width: 25%;
+   align-items: flex-start;
+}
+
+#RightContainer {
+    width: 25%;
+    align-items: flex-end;
+}
+
+#EditorToggleGroup {
+    position: absolute;
+    right: 0;
+}
+
+#AssetActionsGroup {
+    margin: 0;
+}
+
+#AssetActionsGroup ActionButton {
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+#AssetTitleContainer {
+   flex-grow: 1;
+   justify-content: center;
+   flex-direction: row;
+}
+
+#AssetTitleElementContainer {
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+    max-width: 75%;
+}
+
+#AssetTitleElement {
+    align-self: center;
+    font-size: var(--appui-font-sizes-100);
+    -unity-font-definition: url('/Packages/com.unity.dt.app-ui/PackageResources/Fonts/Inter-SemiBold.ttf');
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -unity-text-align: middle-center;
+}
+
+#AssetIcon {
+    align-self: center;
+    display: none;
+    margin-right: 4px;
+}

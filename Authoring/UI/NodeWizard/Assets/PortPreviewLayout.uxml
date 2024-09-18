@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="PortSocketContainer">
+        <ui:VisualElement name="SocketPort">
+            <ui:VisualElement name="PortSocketFill" />
+        </ui:VisualElement>
+        <ui:Label name="PortLabel"/>
+    </ui:VisualElement>
+</ui:UXML>

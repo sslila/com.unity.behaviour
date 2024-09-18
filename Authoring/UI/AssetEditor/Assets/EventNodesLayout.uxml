@@ -1,0 +1,7 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:Graph="Unity.Behavior.GraphFramework">
+    <ui:Image name="Icon"/>
+        <ui:VisualElement name="ChannelLine"/>
+        <ui:VisualElement name="MessageLine" class="NoChannelAssigned">
+            <ui:VisualElement name="Message"/>
+        </ui:VisualElement>
+</ui:UXML>

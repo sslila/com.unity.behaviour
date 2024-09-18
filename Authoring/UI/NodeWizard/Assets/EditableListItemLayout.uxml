@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:aid="Unity.Behavior"  xmlns:appui="Unity.AppUI.UI">
+    <ui:VisualElement name="EditableListContainer">
+        <aid:TextFieldWithValidation name="ItemField"/>
+        <appui:IconButton name="RemoveItemButton" icon="delete"/>
+    </ui:VisualElement>
+</ui:UXML>

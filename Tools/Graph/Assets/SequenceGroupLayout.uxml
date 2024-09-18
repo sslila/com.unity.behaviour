@@ -1,0 +1,4 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Sequence" class="Sequence"/>
+    <CreateNodeButton/>
+</ui:UXML>

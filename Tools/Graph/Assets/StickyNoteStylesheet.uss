@@ -1,0 +1,22 @@
+#Text {
+    color: black;
+}
+
+#Note {
+    padding: 4px;
+    height: 100%;
+}
+
+#NodeContentContainer {
+    background-color: rgb(255, 255, 153);
+    border-radius: 0;
+}
+
+#NodeTitle, #NodeValueContainer {
+    display: none;
+}
+
+#TextField {
+    --unity-cursor-color: #282828;
+    margin: 0px;
+}

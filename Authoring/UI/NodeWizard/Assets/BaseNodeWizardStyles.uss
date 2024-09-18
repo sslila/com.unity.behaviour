@@ -1,0 +1,138 @@
+.BaseNodeWizard {
+  
+}
+
+.Region {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Region > Label {
+  
+}
+
+.Region TextField {
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+TextFieldWithValidation {
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+#NameCategoryContainer {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#NameRegion {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: 0;
+  padding-bottom: 8px;
+}
+
+#CategoryRegion {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: 0;
+}
+
+#CategoryRegion > Label, #NameRegion > Label {
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+#NameField {
+  width: 60%;
+}
+
+#CategoryFieldContainer {
+ width: 60%;
+}
+
+#CategoryField {
+  width: 100%;
+  margin-top: 8px;
+}
+
+Dropdown LocalizedTextElement {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#HeaderLabel {
+  -unity-font-style: bold;
+  font-size: 14px;
+}
+
+#StoryView {
+  display: none;
+}
+
+#InfoRegion {
+  margin-bottom: 8px;
+}
+
+#ButtonRegion {
+  padding-top: 8px;
+  align-items: stretch;
+  overflow: visible;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+#ParametersRegion {
+  margin: 0px;
+  margin-top: 4px;
+}
+
+#ParametersContainer {
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.unity-enum-field {
+  width: 100px;
+}
+
+#NodeContainer {
+  margin: 12px;
+  align-items: flex-start;
+}
+
+#FieldRegion {
+  overflow: visible;
+}
+
+#StoryInfoHelpText {
+  display: none;
+}
+
+#GPTDescriptionField .unity-base-field__input {
+  min-height: 50px;
+  max-height: 150px;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  border-width: 0px;
+  white-space: normal;
+  -unity-text-align: upper-left;
+}
+
+.Invalid Label {
+  color: var(--appui-destructive-100);
+}
+
+.Invalid DropdownItem {
+  color: var(--appui-destructive-100);
+}
+

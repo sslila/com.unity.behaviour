@@ -1,0 +1,67 @@
+SequenceGroup > #SelectionBorder > #NodeContentContainer {
+  padding: var(--appui-static-spacing-150);
+  border-color: #2D2D2D;
+  border-width: 1px;
+  border-radius: 12px;
+  background-color: var(--appui-color-transparent-black-300);
+}
+
+SequenceGroup > #SelectionBorder {
+  border-color: initial;
+  border-radius: 12px;
+}
+
+SequenceGroup > #SelectionBorder :hover {
+  border-radius: 12px;
+}
+
+SequenceGroup > #SelectionBorder > #NodeContentContainer > #Content > #NodeTitle {
+  display: none;
+}
+
+SequenceGroup > #SelectionBorder > #NodeContentContainer > #Content > #NodeValueContainer {
+  display: none;
+}
+
+#ContentContainer {
+  margin: 0px;
+}
+
+#ContentContainer .CreateNodeButton {
+  display: none;
+}
+
+#Info {
+  display: none;
+}
+
+.AddButton {
+    flex-direction: row-reverse;
+    flex-shrink: 0;
+    flex-grow: 1;
+    
+  }
+  
+  .AddButton .icon {
+    background-image: url("/Packages/com.unity.behavior/Blackboard/Assets/Icons/d_CreateAddNew.png");
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  
+  .AddButton .Dropdown {
+    background-image: resource(--unity-icons-dropdown);
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+  }
+  
+.Sequence .GraphNode #SelectionBorder #Content {
+  border-width: 0px;
+}
+
+
+.Group {
+  padding: 12px;
+  align-self: center;
+}

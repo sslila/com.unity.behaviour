@@ -1,0 +1,47 @@
+@import url("/Packages/com.unity.dt.app-ui/PackageResources/Styles/Themes/App UI - Globals.uss");
+@import url("/Packages/com.unity.dt.app-ui/PackageResources/Styles/Themes/App UI - Alias.uss");
+@import url("/Packages/com.unity.dt.app-ui/PackageResources/Styles/App UI.uss");
+@import url("/Packages/com.unity.dt.app-ui/PackageResources/Styles/Themes/App UI - Small.uss");
+
+:root {
+    --appui-icon-debug-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/Debug.png");
+    --appui-icon-folder-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/Folder.png");
+    --appui-icon-delete-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/Delete.png");
+    --appui-icon-x-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/X.png");
+    --appui-icon-caret-down-small-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/CaretDownSmall.png");
+    --appui-icon-caret-left-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/CaretLeft.png");
+    --appui-icon-pen-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/Pen.png");
+    --appui-icon-plus-regular: url("project:/Packages/com.unity.dt.app-ui/PackageResources/Icons/Regular/Plus.png");
+}
+
+.appui-icon--debug--regular {
+    --unity-image: var(--appui-icon-debug-regular);
+}
+
+.appui-icon--folder--regular {
+    --unity-image: var(--appui-icon-folder-regular);
+}
+
+.appui-icon--delete--regular {
+    --unity-image: var(--appui-icon-delete-regular);
+}
+
+.appui-icon--x--regular {
+    --unity-image: var(--appui-icon-x-regular);
+}
+
+.appui-icon--caret-down-small--regular {
+    --unity-image: var(--appui-icon-caret-down-small-regular);
+}
+
+.appui-icon--caret-left--regular {
+    --unity-image: var(--appui-icon-caret-left-regular);
+}
+
+.appui-icon--pen--regular {
+    --unity-image: var(--appui-icon-pen-regular);
+}
+
+.appui-icon--plus--regular {
+    --unity-image: var(--appui-icon-plus-regular);
+}

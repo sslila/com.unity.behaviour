@@ -1,0 +1,3 @@
+<ui:UXML xmlns:uiex="UnityEngine.UIExtras" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns:Graph="Unity.Behavior.GraphFramework">
+    <Graph:EditableLabel name="Note" text="Sticky note!" delayed="true" multiline="true"/>
+</ui:UXML>

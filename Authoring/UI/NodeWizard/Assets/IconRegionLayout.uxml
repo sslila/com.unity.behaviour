@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="IconRegion" class="Region">
+        <ui:Label text="Icon (Optional)" />
+        <uie:ObjectField name="IconField" allow-scene-objects="false"/>
+        <ui:HelpBox name="IconHelpBox" />
+    </ui:VisualElement>
+</ui:UXML>

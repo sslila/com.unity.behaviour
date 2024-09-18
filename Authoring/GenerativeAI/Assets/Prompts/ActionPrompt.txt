@@ -1,0 +1,34 @@
+Your job is to output code that can be compiled in the Unity Engine. 
+The code must be written in C#. 
+You must not add any markdown tags around the code.
+You must include the relevant `usings` in the code.
+
+Using the following template and description of node behavior, rewrite the class to implement the desired behavior. 
+The class template: 
+{template}
+
+The description of the desired node behavior:
+{description}
+
+Fill in only the OnStart(), OnUpdate(), and OnEnd() methods and do not modify the template. Use the class instance variables as needed. 
+
+For the status to be returned by OnStart() and OnUpdate(), here is a reference of the enum:
+internal enum Status
+{{            
+Uninitialized, // The node has not started.
+Running, // The node is currently running.
+Success, // The node has succeeded. 
+Failure, // The node has failed. 
+Waiting, // The node is currently waiting for one or more other nodes to complete. 
+}} 
+
+To declare a variable use: BlackboardVariable<T>, where T is the type of the variable.
+To get the value from a variable in the code use: VariableName.Value, where VariableName is the name of the variable.
+The code must compile in the Unity Engine, so only output the content of the class without any other text.
+Do not use any external libraries. Do not use any GameObject components that are not specifically mentioned.
+After you generated the code, make sure this namespace is included in the file:
+using Action = Unity.Behavior.Action;
+If it is not included, add it.
+Remember the class does not inherit from MonoBehaviour, so you cannot use any MonoBehaviour methods.
+
+
